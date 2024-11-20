@@ -1,0 +1,111 @@
+:root {
+
+    /* color variables  */
+    --white: #FFFFFF;
+    --black: #000000;
+    --blue: #3E63E8;
+    --red: #FF0000;
+
+    /* typo varibale*/
+    --manrope: 'ProximaNovaRegular', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: var(--manrope);
+    background-color: var(--white);
+}
+
+/* navbar starts from here */
+
+.navbar{
+    background-color: var(--blue);
+}
+.custom-navbar-collapse {
+    position: fixed;
+    top: 55px;
+    left: -250px; /* Hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #343a40; /* Same as navbar-dark bg-dark */
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    z-index: 1040;
+}
+
+.custom-navbar-collapse.open {
+    left: 0; 
+}
+
+.navbar-toggler {
+    z-index: 1050; 
+}
+
+.navbar-nav {
+    padding-top: 1rem;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .navbar img{
+       width: 90%;
+    }
+   }
+
+/* navbar ends here */
+
+/* hero starts */
+
+@media (max-width: 768px) {
+ .hero{
+    display: flex;
+    justify-content: center;
+ }
+}
+
+/* hero ends */
+
+/* content starts */
+
+.content img{
+    width: 100px;
+}
+
+/* content ends */
+
+/* kids starts */
+
+.kids{
+    display: flex;
+    justify-content: center;
+}
+
+.kids img{
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .kids img{
+        width: 100%;
+    }
+   }
+
+/* kids ends */
