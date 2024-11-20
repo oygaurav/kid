@@ -33,10 +33,10 @@ body {
 .custom-navbar-collapse {
     position: fixed;
     top: 55px;
-    left: -250px; /* Hidden off-screen */
+    left: -250px; 
     width: 250px;
     height: 100%;
-    background-color: #343a40; /* Same as navbar-dark bg-dark */
+    background-color: var(--blue); 
     overflow-y: auto;
     transition: left 0.3s ease-in-out;
     z-index: 1040;
