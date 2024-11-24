@@ -98,8 +98,13 @@ body {
     justify-content: center;
 }
 
+.kids-item{
+    display: flex;
+    justify-content: center;
+}
+
 .kids img{
-    width: 40%;
+    width: 60%;
 }
 
 @media (max-width: 768px) {
@@ -109,3 +114,81 @@ body {
    }
 
 /* kids ends */
+
+/* bean starts */
+
+.bean img{
+    width: 50%;
+}
+
+.bean-kids-item{
+    display: flex;
+    justify-content: center;
+}
+
+.bean-body{
+    width: 50%;
+    display: flex;
+    justify-self: center;
+}
+
+.bean-body .card-body{
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: -5px;
+}
+
+.bean-body a{
+    text-decoration: none;
+}
+
+
+
+.kids-btn-item{
+   width: 42%;
+}
+
+.kids-more-btn{
+    background: var(--red);
+    color: var(--white);
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .bean img{
+        width: 100%;
+    }
+
+    .bean-body{
+        width: 100%;
+        display: flex;
+        justify-self: center;
+    }
+
+
+    .kids-btn-item {
+        width: 100%;
+    }
+   }
+
+/* bean ends */
+
+
+/* myaccount starts */
+
+.myaccount{
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .myaccount{
+        width: 100%;
+    }
+}
+/* myaccount ends */
